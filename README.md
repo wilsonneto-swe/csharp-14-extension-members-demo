@@ -11,7 +11,7 @@ static class PersonExtensions
 {
     extension(Person)
     {
-        // static extension method for cloning the person object, reseting the purchases
+        // static extension method for cloning the person object, resetting the purchases
         public static Person Clone(Person person) => person with { Purchases = []};
 
         // example of an instance operation as extension
@@ -42,10 +42,10 @@ static class PersonExtensions
 ## How to use it
 
 ```csharp
-// calling an extension method (extacly as before C# 14)
+// calling an extension method (exactly as before C# 14)
 person.GetFullName();
 
-// acessing an extension member
+// accessing an extension member
 person.FullName;
 
 // calling an extension static method
